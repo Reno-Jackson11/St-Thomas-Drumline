@@ -2,8 +2,6 @@
 layout: default
 ---
 
-<img src="./assets/st-thomas.png" alt="Drumline Logo" width="200" style="display:block;margin:auto;" />
-
 # Welcome to St Thomas Drumline!
 
 - [Performances](./performances.md)

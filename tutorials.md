@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Tutorials"
-nav_order: #
+nav_order: 4
 ---
 
 # Tutorials!

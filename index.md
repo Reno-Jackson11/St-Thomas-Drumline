@@ -5,6 +5,7 @@ layout: default
 # Welcome to St Thomas Drumline!
 
 - [Performances](./performances.md)
+- [Parts](./parts.md)
   
 This site will host:
 - Tutorials

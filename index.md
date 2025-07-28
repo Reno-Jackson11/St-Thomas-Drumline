@@ -7,6 +7,7 @@ layout: default
 - [Performances](./performances.md)
 - [Parts](./parts.md)
 - [Tutorials](./tutorials.md)
+- [Pieces](./pieces/index.md)
   
 This site will host:
 - Tutorials

@@ -4,6 +4,8 @@ title: "Pieces"
 nav_order: 
 ---
 
+# Our Pieces!! (Click on them to see the individual parts)
+
 - [Rock Groove](./rock.md)
 - [Jam Time](./jam.md)
 - [Boom Box](./boom.md)

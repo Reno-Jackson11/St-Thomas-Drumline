@@ -19,3 +19,4 @@ nav_order:
 - [Samba](./samba.md)
 - [T-Funk](./tfunk.md)
 - [Boom Hakalak](./hakalak.md)
+- [Cruise Controll](./cruise.md)

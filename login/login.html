@@ -17,7 +17,7 @@
       let pass = document.getElementById("password").value;
 
       // fetch users.json
-      let res = await fetch("users.json");
+      let res = await fetch("./users.json");
       let users = await res.json();
 
       // check credentials

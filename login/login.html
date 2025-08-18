@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta charset="UTF-8">
   <title>Login</title>
 </head>
 <body>
@@ -9,25 +10,30 @@
   <input type="password" id="password" placeholder="Password">
   <button onclick="login()">Login</button>
 
-  <p id="message"></p>
+  <p id="message" style="color:red;"></p>
 
   <script>
     async function login() {
-      let user = document.getElementById("username").value;
-      let pass = document.getElementById("password").value;
+      let user = document.getElementById("username").value.trim();
+      let pass = document.getElementById("password").value.trim();
 
-      // fetch users.json
-      let res = await fetch("./users.json");
-      let users = await res.json();
+      try {
+        // fetch users.json from root
+        let res = await fetch("/users.json");
+        let users = await res.json();
 
-      // check credentials
-      let found = users.find(u => u.username === user && u.password === pass);
+        // check credentials
+        let found = users.find(u => u.username === user && u.password === pass);
 
-      if (found) {
-        document.cookie = "user.login=1; path=/";
-        window.location.href = "../index.html"; // redirect to members-only page
-      } else {
-        document.getElementById("message").textContent = "Invalid login!";
+        if (found) {
+          document.cookie = "user.login=1; path=/";
+          window.location.href = "/"; // go back to homepage
+        } else {
+          document.getElementById("message").textContent = "Invalid login!";
+        }
+      } catch (err) {
+        document.getElementById("message").textContent = "Error loading users.json";
+        console.error(err);
       }
     }
   </script>

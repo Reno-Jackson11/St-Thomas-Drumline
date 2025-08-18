@@ -1,4 +1,3 @@
-// users.json
 [
   { "username": "ottavio", "password": "ottavio" },
   { "username": "josh", "password": "josh" }

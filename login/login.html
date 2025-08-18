@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login</title>
+</head>
+<body>
+  <h2>Drumline Members Login</h2>
+  <input type="text" id="username" placeholder="Username">
+  <input type="password" id="password" placeholder="Password">
+  <button onclick="login()">Login</button>
+
+  <p id="message"></p>
+
+  <script>
+    async function login() {
+      let user = document.getElementById("username").value;
+      let pass = document.getElementById("password").value;
+
+      // fetch users.json
+      let res = await fetch("users.json");
+      let users = await res.json();
+
+      // check credentials
+      let found = users.find(u => u.username === user && u.password === pass);
+
+      if (found) {
+        document.cookie = "user.login=1; path=/";
+        window.location.href = "members.html"; // redirect to members-only page
+      } else {
+        document.getElementById("message").textContent = "Invalid login!";
+      }
+    }
+  </script>
+</body>
+</html>

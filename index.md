@@ -13,9 +13,9 @@ layout: default
   const buttonStyle = "padding:8px 16px; border-radius:6px; background-color:#ff6666; color:white; border:none; cursor:pointer; font-weight:600;";
 
   if (document.cookie.includes("user.login=1")) {
-    authDiv.innerHTML = '<a href="St-Thomas-Drumline/login/logout.html"><button style="'+buttonStyle+'">Logout</button></a>';
+    authDiv.innerHTML = '<a href="./login/logout.html"><button style="'+buttonStyle+'">Logout</button></a>';
   } else {
-    authDiv.innerHTML = '<a href="St-Thomas-Drumline/login/login.html"><button style="'+buttonStyle+'">Login</button></a>';
+    authDiv.innerHTML = '<a href="./login/login.html"><button style="'+buttonStyle+'">Login</button></a>';
   }
 </script>
 

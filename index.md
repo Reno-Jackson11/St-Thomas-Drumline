@@ -15,7 +15,7 @@ layout: default
   if (document.cookie.includes("user.login=1")) {
     authDiv.innerHTML = '<a href="./login/logout.html"><button style="'+buttonStyle+'">Logout</button></a>';
   } else {
-    authDiv.innerHTML = '<a href="./login/login.html"><button style="'+buttonStyle+'">Login</button></a>';
+    authDiv.innerHTML = '<a href="./login/loginstatic.html"><button style="'+buttonStyle+'">Login</button></a>';
   }
 </script>
 

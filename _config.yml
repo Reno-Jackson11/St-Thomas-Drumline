@@ -5,3 +5,8 @@ title: "St Thomas Drumline"
 description: "The official website for the St. Thomas Drumline"
 github:
   is_project_page: false
+
+<body>
+  {{ content }}
+  {% include footer.html %}
+</body>
